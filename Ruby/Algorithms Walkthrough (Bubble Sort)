@@ -1,0 +1,35 @@
+One of the most common technical interview questions you will get will be to sort a set of data.
+Here, we will go through step-by-step how to implement “bubble sort”, a very inefficient, but nonetheless educational sorting algorithm that repeatedly goes through a list of data, compares each pair of adjacent items and swaps them if they are in the wrong order.
+
+
+Example: [1,3,2,1] => [1,2,3,1] => [1,2,1,3] 
+
+
+
+Create a .rb file (in a new folder/ruby project folder) and name it “bubble_sort.rb” or something similar
+
+Declare a method bubble_sort and have it take an array as an argument 
+
+	def bubble_sort(array)
+	end
+
+Declare a variable in your method that corresponds to the length of your array
+	n = array.length 
+
+Start a loop and added a variable “swapped”, default as false
+
+Inside your loop, make it go through (n-1) times, operating on each indexed element. 
+Your loop logic will tell your method to look at each element and compare it to the next one to see if it’s greater. If true, swap.
+	loop do 
+		swapped = false	
+		(n-1).times do |i|
+			if array[i] > array[i + 1]
+				array[i], array[i+1] = array[i+1], array[i]
+				swapped = true
+			end
+		end
+		break if not swapped #breaks out of loop if swapped is not set to true
+	end
+	array
+
+Test it out!
