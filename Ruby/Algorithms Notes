@@ -1,0 +1,16 @@
+
+Competencies
+
+Algorithms typically use iterators to manipulate data a certain way
+We already work with algorithms in Ruby, they’re called class methods. Built-in methods for strings, arrays, integers, etc out of the box to change them in some way, we’re just now making new ones, custom ones
+Algorithms are some of the most common technical interview questions, there is almost always more than one way to solve an algorithm, so it’s a good way for employers to see how you think
+You can make your own algorithms through conditionals, loops, and iterators, as well as built-in methods
+Some solutions will run faster than others, due to time complexity, we won’t get too deep into that, but a general rule of thumb is that loops and nested loops are slower, and that hashes are faster than arrays
+
+
+
+
+Applications
+Make own algorithms for yourself, your current project, future projects
+Understand that there are different ways to solve algorithms, and there are “better” ways 
+
