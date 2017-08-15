@@ -1,0 +1,42 @@
+Let’s start small:
+
+irb:
+puts “fatlouie”.sub(“fat”,”skinny)
+
+puts “fatlouiefat”.sub(“fat”,”skinny”)
+
+puts “fatlouiefat”.gsub(“fat”, “skinny”)
+
+New file => regex_practice.rb
+
+string = “The 12 quick brown foxes jumped over the 10 lazy dogs”
+
+#Where is the first instance of ‘o’ in this string?
+p string =~ /o/ 
+
+#Where is the first instance of the word ‘quick’ in this string?
+
+p string =~ /quick/
+
+#Does the letter ‘z’ appear in this string?
+p string =~ /z/ ? “Valid” : “Invalid” #ternary expression
+#same as if string =~ /z/
+		“Valid”
+	else
+		“Invalid”
+	end
+
+Note: case insensitive search would be /z/i 
+
+a = “Hi, how are you?”
+a.sub(/^../, ‘Hello’) # “^” means where you’re starting, each “.” means a character
+
+#grab all the numbers and print them out
+string.scan(/\d+/) {|z| puts z} #puts the return in a variable “z”, prints z. “d” is for digit, “+” is for “any number of joining characters of the same class(digits in this case)
+
+#grab and print out letters if they are “a”, “s”, or “w”
+string.scan(/[asw]/) {|y| puts y}
+
+Range is denoted with hyphen like [a-z]
+One last example. Phone numbers can’t contain letters, so…
+“Your phone number cannot contain numbers you idiot” if “510-55S-6969” .match(/[a-z]/i)
