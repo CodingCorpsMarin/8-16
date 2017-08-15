@@ -1,0 +1,10 @@
+
+Competencies
+
+Regular Expressions allow you to select certain sets of characters like “all integers”, or “all capital letters” without having to declare a set of all integers/capital letters
+Very useful in matching algorithms, password validity checking, etc
+For ruby, use Rubular.com as a reference for most regex matchers
+
+Applications
+Make algos using regex for easier processing/shorter code
+
