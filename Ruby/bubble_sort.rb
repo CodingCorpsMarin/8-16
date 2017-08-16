@@ -1,10 +1,5 @@
 # We want this method to sort through an array and rearrange/swap numbers/elements if they are out of order
 
-# array = [3,2,6,1,7,3,4]
-# [2,3,6,1,7,3,4]
-# [2,3,1,6,7,3,4]
-# [2,3,1,6,3,7,4]
-# [2,3,1,6,3,4,7]
 
 def bubble_sort(array)
 	n = array.length
@@ -19,5 +14,8 @@ def bubble_sort(array)
 		break if not swapped
 	end
 
-	array 
+	array
 end
+
+array = ["louie","cesar","compadre","nancy","kanye"]
+bubble_sort(array)
